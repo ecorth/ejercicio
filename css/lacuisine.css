@@ -1,0 +1,1093 @@
+@charset "utf-8";
+@import url('http://fonts.googleapis.com/css?family=Quicksand:300,400,700');
+@import url('http://fonts.googleapis.com/css?family=Cinzel:400,700');
+@import url('http://fonts.googleapis.com/css?family=Grand+Hotel');
+
+body{
+	
+	margin:0;
+	font-family:Quicksand;
+}
+.clearfix::after{
+	clear:both;
+	display:table;
+	content:"";
+}
+*{
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box; 
+	box-sizing: border-box; 
+
+}
+a{text-decoration:none; color:inherit;}
+a img{border:none;}
+ul{list-style-type:none; padding:0; margin:0;}
+ul li{padding:0; margin:0;}
+button{cursor:pointer;}
+h1{font-size:30px; color:#666666; font-weight:400; text-transform:uppercase; margin-top:50px;}
+h2{
+	font-weight:normal;}
+
+.contenedor{width:1000px; margin:0 auto; position:relative;}
+
+.imagen{position:relative;
+	overflow:hidden;
+	display:block;
+}
+.imagen img{
+    position: absolute;
+    top: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9999px;
+    margin: auto;
+}
+header {
+	height:65px;
+	background:#d77a73 url(../images/menu_pattern.png) repeat-x center left;
+	  box-shadow: 0 0 30px 10px rgba(0,0,0,.2);
+	  position:fixed;
+	  z-index:999;
+	  top:0;
+	  left:0;
+	  right:0;
+}
+header .logo{
+	height:65px ; width:auto ;
+	display: block;
+	position: relative;
+	float: left;
+	margin-left:55px;
+	
+}
+header .logo img{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+header .menu{
+	font-size:12px;
+	float:right;
+	height:65px;
+	line-height:65px;
+	font-weight:700;
+}
+header .menu li{display: table-cell; text-align:center;height: 65px;vertical-align: middle; transition:all 1s; font-weight:normal;}
+header .menu li:hover{background: rgba(151,74,69,.2);}
+header .menu a{
+	color:#fff;
+	padding:0 30px;
+	height:16px;
+	border-left:#fff 2px solid;
+	display:block;
+	line-height: 16px; 
+}
+header .menu .corp{
+	background: rgba(151,74,69,.8);
+	padding-top: 17px;
+	vertical-align: top;
+}
+header .menu .corp a{border-left:none;}
+
+.menu li ul{
+	background-image:url(../images/fondo_menu.png);
+	background-repeat:repeat-x;
+	position:absolute;
+	background-color:#b9625c;
+	left:0;
+	right:0;	top:65px;
+	height:165px;
+	text-align:center;
+	font-size:0;
+		max-height:0px;
+		opacity:0;
+	overflow:hidden;
+	transition:all 1s;
+}
+.menu li:hover ul{
+	max-height:500px;	
+	opacity:1;
+}
+.menu li ul li{
+	display:inline-block;
+	width:95px;
+	color:#fdfdfd;
+	font-size:12px;	
+	line-height:40px;
+	margin:15px 50px 0;
+
+}
+.menu li ul li a{line-height:inherit; border:none; text-align:center;height: auto;padding: 0;display: inline;}
+.menu li ul li:hover{
+	background:transparent;	
+}
+.menu li ul li:hover .imagen{
+	border:#fff 3px solid;	
+}
+.menu .imagen{
+	width:85px;
+	height:85px;
+	border-radius:50%;
+	border:#e8cdcb 3px solid;	
+	transition:all 1s;
+	margin: 0 auto;
+}
+.menu .imagen img{
+		
+}
+
+#banner{
+	height:600px;
+	overflow:hidden;
+	position:relative;
+	margin-top:50px;
+}
+#banner img#imgzoom{
+	min-width:100%;
+	transition: all 10s ease-in-out;}
+#banner img.zoomin { transform: scale(1.1); }
+#banner div{background-size:cover;}
+#banner .frase{position:absolute; z-index:100; bottom:267px; left:100px;}
+#banner .flores{position:absolute; z-index:50; bottom:0; left:0; z-index:999;}
+#banner .banner_flecha{position:absolute; z-index:75; bottom:70px; left:200px;}
+
+#imagenes{
+	width:642px;
+	height:542px;
+	position:absolute;
+	
+	right:0;
+	margin-top:-355px;
+	z-index:150;	
+}
+.imgInt{
+	width:642px;
+	height:542px;
+	position:relative;
+	overflow: hidden;
+}
+.imgInt img{
+	position:absolute;	
+}
+.img1{	top:0;	left: 257px;}
+.img2{	top: 248px;	left: 81px;}
+.img3{	top: 185px;	left: 200px;}
+.img4{	top: 160px;	left: 387px;}
+.img5{	bottom: 45px;	left: 387px;}
+.img6{	right: -2px;	top: 285px;}
+.img7{	bottom:0;	left:0;}
+
+.rosa{
+	color:#d4716a;
+	font-size:17px;	
+	font-weight:300;
+}
+
+
+#opciones{
+	border-bottom:#d4716a 5px solid;
+	font-size:0;	
+	margin-top:90px;
+}
+#opciones li{
+	display:inline-block;
+	width:49.8%;	
+	background-size:cover;
+	background-position:center center;
+	height:425px;
+	vertical-align:top;
+	position:relative;
+}
+#opciones li:nth-child(2n+1){margin-right:.4%;}
+#opciones .mobiliario{background-image:url(../images/mobiliario.png);}
+#opciones .banquetes{background-image:url(../images/banquetes.png);}
+#opciones a{
+	font-family:Cinzel;	
+	font-size:24px;
+	color:#666666;
+	display:block;
+	height:190px;
+	width:70%;
+	margin:auto;
+	background:rgba(255,255,255,.85);
+	position:absolute;
+	top:0; left:0; bottom:0; right:0;
+	text-align:center;
+	vertical-align:middle;
+}
+#opciones a::before{
+	content:"";
+	height: 194px;
+	width: 100%;
+	margin:auto;
+	position:absolute;
+	top:0; left:0; bottom:0; right:0;
+	
+	margin-left: -5px;
+	margin-bottom: -3px;
+	border-radius: 5px;
+	border: #fff 1px solid;
+	
+	-webkit-box-sizing: border-box; 
+-moz-box-sizing: border-box; 
+box-sizing: border-box; 
+
+}
+#opciones a::after{
+	content:"";
+	height: 195px;
+	width: 100%;
+	margin:auto;
+	position:absolute;
+	top:0; left:0; bottom:0; right:0;
+
+	margin-top: -6px;
+	border-radius: 5px;
+	border: #fff 1px solid;
+	
+	-webkit-box-sizing: border-box; 
+-moz-box-sizing: border-box; 
+box-sizing: border-box; 
+
+}
+
+#social{margin-bottom:70px;}
+#social h1{text-align:center;}
+#social div p, #social .testimonio{
+	position:relative;
+}
+#social a{color:#d4716a;}
+#social div p::before, #social .testimonio::before{
+		background:#d4716a;
+		width:17%;
+		height:1px;
+		position:absolute;
+		top:0;
+		lefT:0;
+		right:0;
+		margin:Auto;
+		content:"";
+}
+#social .testimonio::before{margin-left:150px;}
+.tweets{
+	float:left;
+	width:47%;	
+}
+.tweets p{
+	padding:30px 10%;
+	font-family:Cinzel;	
+	font-weight:700;
+	text-align:center;
+	
+}
+.tweets .fecha{font-family:'Quicksand'; display:block; font-weight:400; color:#999999; font-size:12px; margin-top:20px;}
+.testimonios{
+	float:left;
+	width:53%;	
+}
+.testimonios h1{  text-align: left !important;
+  padding-left: 150px;}
+.testimonios div{
+	font-family:'Quicksand';
+	font-weight:300;
+	padding:30px 0;
+}
+.testimonios div strong{
+	font-family:'Cinzel';
+	color:#d4716a;	
+	display:block;
+	margin-bottom:20px;
+	
+}
+.testimonios .imagen{
+	height:150px;
+	width:120px;
+	position:relative;
+	overflow:hidden;
+	float:left;
+	margin-right:30px;
+	margin-bottom:30px;
+}
+.testimonios .imagen img{
+	    position: absolute;
+    top: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9999px;
+    margin: auto;
+	min-width:100%;
+}
+
+#opcionesInf{
+	background:#e5dddb;
+	padding:80px 0;
+	font-size:0;
+	position:relative;
+}
+.flor{
+	position:absolute;
+	left:0;
+
+	bottom:45px;
+	margin:0 !important;
+	z-index:-1;
+		
+}
+#opcionesInf ul li, #valores ul li{
+	height:190px;
+	width:32%;
+	position:relative;
+	display:inline-block;
+	vertical-align:top;
+	background-size:cover;
+	background-position:center center;
+	margin-right:2%;
+
+}
+#opcionesInf ul li:nth-child(3n+3), #valores ul li:nth-child(3n+3){margin-right:0;}
+#opcionesInf ul li .fondo{
+	background-size:cover;
+	background-position:center center;
+	position:absolute;
+	top:0;
+	right:0;
+	left:0; bottom:0;
+	z-index:1;
+	overflow:hidden;
+	
+	transition:all 3s;
+}
+#opcionesInf ul li:hover .fondo{
+	 -webkit-filter: blur(3px);
+  -moz-filter: blur(3px);
+  -o-filter: blur(3px);
+  -ms-filter: blur(3px);
+  filter: blur(3px);
+}
+
+.screen{
+	background:Rgba(35,29,20,.75);
+	position:absolute;
+	top:0; right:0; bottom:0; left:0;	
+	padding:0; margin:0;
+	z-index:10;
+	transition:all 3s;
+}
+#opcionesInf ul li:hover .screen, #valores ul li:hover .screen{
+	background:Rgba(35,29,20,.5);}
+#opcionesInf ul li img, #valores ul li img{position:absolute; z-index:10; top:0; right:0; bottom:0; left:0; margin:auto;	}
+
+#redes{
+height:145px;
+line-height:145px;
+background:#edeae5;
+font-family:Cinzel; font-size:30px; color:#666666;
+text-align:center;		
+position:relative;
+}
+#redes img{vertical-align:middle; margin:0 5px;}
+
+
+footer{
+	background:#d4716a url(../images/footer_pattern.png);
+	height:75px;
+	padding:20px 0 0;
+	text-align:center;
+	color:#fff;
+	font-weight:300;
+	font-size:12px;	
+	line-height:18px;
+}
+footer a:hover{text-decoration:underline;}
+
+
+
+#bannerInt{
+	height:395px;
+	background-position:center center;
+	background-size:cover;
+	background-attachment:fixed;	
+	position:relative;
+	margin-top:50px;
+}
+#bannerInt .contenedor{height:395px;}
+#bannerInt.jardin{background-image:url(../images/banner_jardin.png); height:500px;}
+#bannerInt.montajes{background-image:url(../images/banner_montajes.png); height:500px;}
+#bannerInt.somos{background-image:url(../images/banner_somos.png);}
+#bannerInt.xv{background-image:url(../images/banner_xv.png); height:595px;}
+#bannerInt.ideas{background-image:url(../images/banner_ideas.png); height:496px;}
+#bannerInt.banner_corporativo{background-image:url(../images/banner_corporativo.png); height:496px;}
+#bannerInt.contacto{background-image:url(../images/banner_contacto.png); height:496px;}
+#bannerInt.bodas{background-image:url(../images/banner_boda.jpg); height:595px;}
+#bannerInt.bautizos{background-image:url(../images/banner_bautizo.jpg); height:595px;}
+#bannerInt.babyshower{background-image:url(../images/banner_babyshower.jpg); height:595px;}
+#bannerInt.catering{background-image:url(../images/banner_catering.jpg); height:500px;}
+
+
+#bannerInt img{
+	position:absolute;
+	top:0;
+	bottom:0;
+	margin:auto;	
+}
+.jardinItem {position:relative; z-index:10; margin-bottom:60px;}
+.jardinItem li{
+	padding:30px 0;
+	border-bottom:#000 1px solid;
+	position:relative;
+		
+}
+.jardinItem .imagen{
+	float:left;
+	height:292px;
+	width:425px;
+	position:relative;
+	overflow:hidden;
+	margin-right:45px;
+
+}
+.jardinItem .jardinInfo{float:left; width:530px; position:relative;}
+.jardinItem h1{
+	font-weight:300;
+	font-size:30px;	
+	color:#666666;
+	margin:0;
+}
+.jardinItem h2{
+	font-weight:300;
+	font-size:13px;	
+	color:#d67871;
+	padding-left:20px;
+	text-transform:uppercase;
+	background:url(../images/icon_place.png) no-repeat left center;
+	margin:20px 0;
+	height:20px;
+	line-height:20px;
+}
+.jardinItem h3{font-weight:400;}
+.jardinItem h2 .tipo{float:right;}
+.jardinItem p{
+	color:#999;
+	font-size:16px;	
+	overflow:hidden;
+	max-height:105px;
+	line-height:20px;
+}
+.personas{
+	width:145px;
+	float:left;
+	text-align:center;
+	font-family:'Cinzel';	
+	color:#808080;
+	font-size:22px;
+	border:#babdbd 1px solid;
+	padding:5px 0 0 0;
+}
+.personas .num{
+	font-size:40px;
+	display:block;
+	line-height:40px;
+}
+.jardinItem .vermas{
+	background:#d67871;
+	border-radius:5px;
+	color:#fff;
+	height:45px;
+	width:195px;
+	text-align:center;
+	line-height:45px;
+	font-size:13px;
+	position:absolute;
+	right:0;
+	bottom:0;
+	display:block;	
+}
+.jardinDetalle{position:static !important; border-bottom:none !important;}
+.banner_detalle{
+	height:340px;
+	position:relative;	
+	margin-bottom:25px;
+	overflow:hidden;
+}
+.banner_detalle img{
+    position: absolute;
+    top: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9999px;
+    margin: auto;
+	min-height:100%;
+	width:1000px !important;
+}
+.jardin_galeria{
+  font-size: 0;
+  float: left;
+  margin-left: 55px;
+  width:415px;
+}
+.jardin_galeria a{
+	border:#ccc 1px solid;
+	display:inline-block;	
+	width:100px;
+	height:100px;
+	margin:0 5px 5px 0;
+	overflow:hidden;
+	transition:all 2s;
+}
+.jardin_galeria a img{transition:all 2s; width:150px;}
+.jardin_galeria a:nth-child(4n+4){margin-right:0;}
+.jardin_galeria a:hover{border: 1px solid #d67871;}
+.jardin_galeria a:hover img{
+	 -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+}
+
+.capmax{font-size:11px;}
+.right{float:right;}
+.left{float:left; left:0; right:auto;}
+
+#cuentaCon{
+	margin-top:40px;
+	border-top:#000 1px solid;	
+	padding:15px 0;
+}
+.iconos{float:right;}
+
+#cuentaCon .imagen{
+	width:389px;
+	height:247px;
+	overflow:hidden;
+	position:relative;
+	float:left;
+	margin: 0 50px 40px 0;
+}
+
+#cuentaCon .imagen img{
+    position: absolute;
+    top: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9999px;
+    margin: auto;
+	min-width:389px;
+	transition:all 20s;
+}
+#cuentaCon .imagen img:hover{
+	transform:scale(1.1,1.1);
+}
+h3.rosa{color:#d4716a; font-size:20px; margin:45px 0 35px 0;}
+.pushAbout{height:367px;}
+#about{
+	background:#e5dddb;
+	position:absolute;
+	right:0;
+	left:0;
+	padding:20px 0;
+	font-weight:300;
+	
+}
+#about p{
+	color:#999;
+	font-size:18px;
+	max-height:600px;
+}
+#about .imagen{
+	width:	320px;
+	height:277px;
+}
+#about h1, #valores h1, #considera h1, h1.grand{
+	Font-family:'Grand Hotel';
+	font-size:32px;
+	color:#544d46;	
+	text-transform:none;
+}
+h1.grand{text-align:center;}
+#about h2{
+	font-weight:300;
+	font-size:26px;
+	text-transform:uppercase;
+	color:#666666;	
+}
+
+#ubicacion{
+	padding-bottom:60px;
+	height:450px;
+}
+
+#ubicacion h1{
+	font-size:20px;
+	font-weight:400;
+	color:#050300;
+	padding-bottom:20px;
+	border-bottom:#050300 1px solid;
+	margin-bottom:35px;	
+}
+#ubicacion .mapa{
+	height:300px;
+	width:730px;
+	float:left;
+	margin-right:20px;	
+}
+#ubicacion p{
+	max-height:300px;
+	font-size:16px;
+	color:#999;
+	line-height:20px;
+}
+.pushContacto{height:390px;}
+#contacto{
+	height:480px;
+	position:absolute;
+	left:0;
+	right:0;
+	background:url(../images/telefono.png) no-repeat center center;
+	background-size:cover;	
+}
+#contacto .form{
+	background:rgba(203,198,194,.75);
+	width:440px;
+	height:480px;	
+	color:#fff;
+	padding:55px 12px 0 12px;
+	font-size:15px;
+	color:#fff;
+	font-weight:700;
+}
+#contacto h1{
+		font-size:15px;
+	color:#fff;
+	font-weight:700;
+}
+#contacto input, #contacto select{
+	width:198px;
+	height:40px;
+	line-height:40px;
+	font-family:'Quicksand';
+	border:none;
+	padding:0 15px;
+	margin:0 15px 18px 0;	
+	color:#999999;
+}
+#contacto select{
+
+-webkit-appearance: none;
+appereance:none;
+background:url(../images/select.png) no-repeat 375px center #fff;	
+}
+#contacto .sm{margin-right:0;}
+#contacto .completo{width:100%;}
+#contacto button{
+	border:none;
+	background:#d4716a;
+	color:#fff;
+	height:40px;
+	line-height:40px;
+	FONT-size:12px;
+	width:155px;
+	text-align:center;	
+}
+
+
+/********** SOMOS **************/
+.imgSomos{
+	float:left;
+	position:relative;
+	top:-105px;	
+	margin:0 115px 30px 0;
+}
+
+#valores{
+	background:#e5dddb;
+	position:relative;
+	text-align:center;
+	padding:50px 0 60px 0;
+	font-size:0;
+}
+#valores h1{margin:0 0 52px 0; z-index:100; position:relative;}
+.flor2{
+	position:absolute;
+	top:0; right:0; lefT:0; bottom:0; margin:auto;	
+}
+#reto{padding:120px 0 0 0;}
+#reto p{
+	font-size:16px;
+	color:#999;
+	line-height:20px;
+	margin-bottom:70px;	
+}
+.img20aniv{
+	float:left;
+	margin-right:70px;	
+	position:relative;
+	top:-20px;
+	z-index:200;
+	margin-bottom:20px;
+}
+
+#galeria_imagen{
+	height:555px;
+	background-position:center center;
+	background-size:cover;
+	background-attachment:fixed;	
+	position:relative;
+}
+#galeria_imagen .screen{
+	background:Rgba(35,29,20,0);	
+}
+#galeria_imagen:hover .screen{
+	background:Rgba(35,29,20,.5);	
+}
+#galeria_imagen img {
+    position: absolute;
+    top: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9999px;
+    margin: auto;
+	z-index:300;
+
+}
+.galeria_eventos{background-image:url(../images/fondo_galeria.png);}
+.galeria_catering{background-image:url(../images/fondo_catering.png);}
+.galeria_eventos_corp{background-image:url(../images/fondo_eventos.png);}
+
+
+/************  XV AÑOS ************/
+.xvfoto{
+	float:right;
+	position:relative;
+	top:-80px;
+	margin-left:70px;	
+}
+#tufiesta{
+	text-align:center;	
+}
+#tufiesta h1{
+	font-family:'Grand Hotel';
+	color:#544d46;
+	font-size:42px;
+	text-transform:none;	
+}
+#infoxv{
+	padding:95px 0 0 0;	
+}
+#infoxv.contenedor{position:static;}
+#infoxv p{
+	color:#999;
+	font-size:16px;
+	line-height:20px;;
+}
+#infoxv .right{
+	margin-lefT:80px;
+	margin-bottom:30px;	
+	margin-top:30px;
+}
+#infoxv .left{
+	margin-right:160px;	
+}
+.banderillas{
+	position:absolute;
+	left:0;	
+	margin-top:-120px;
+}
+
+
+/****************** MONTAJES *************/
+#expertos{padding-top:5px;}
+#expertos div{
+	width:420px;
+	position:absolute;
+	left:50%;
+	margin:80px 0 0 0;
+
+}
+#considera{
+	position:relative;
+	text-align:center;
+	top:-100px;	
+}
+#considera h1{font-size:40px;}
+#considera ul{
+	font-size:0;
+	
+}
+#considera ul li{
+	width:33%;
+	margin-right:.5%;
+	display:block;
+	float:left;
+}
+#considera ul li:nth-child(3n+3){margin-right:0;}
+#considera .imagen{
+	width:100%;
+	height:212px;	
+}
+#considera h2{font-size:20px; color:#666666; font-weight:400; text-transform:uppercase;}
+#considera p{color:#999; font-size:16px; text-align:center; padding:0 8%; height:200px;}
+.btnRosa{
+	display:inline-block;
+	padding:0 65px;
+	border-radius:5px;
+	background:#d67871;
+	color:#fff;
+	height:45px;
+	line-height:45px;
+	font-size:15px;
+	text-transform:uppercase;
+	margin-top:20px;	
+}
+
+#paquete{
+	text-align:center;
+	background:url(../images/paquete_bg.png);
+	padding:40px 0 60px 0;
+	clear:both;
+}
+
+#paquete ul{
+	font-size:0;
+	padding:85px 0 30px 0;
+	
+}
+#paquete ul li{
+	width:14.2%;
+	display:inline-block;
+	font-size:25px;
+	font-weight:300;
+}
+#paquete ul li img{margin-bottom:30px;}
+#paquete .mas{position:relative; top:-80px;}
+
+#gallery{margin-top:60px;}
+#gallery-content a{position:relative; display:block;}
+#gallery-content a span {
+	padding:inherit;
+	
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.5);
+	color: #fff;
+	z-index:999;
+	text-align:center;
+	display:table-cell;
+	vertical-align:middle;
+	opacity:0;
+	transition:all 1s;
+}
+
+#gallery-content a:hover span{
+	opacity:1;
+	
+}
+
+/************  CATERING *************/
+#expertos_catering{
+	padding-top:114px;
+	padding-bottom:60px;
+	
+}
+#expertos_catering p{width:435px;}
+#expertos_catering img{margin-top:-145px;}
+.florDer{position:absolute; right:0; bottom:0; top:0; margin:auto;}
+
+#detalles h1{text-align:center;}
+
+#detalles ul{
+	display:table;	width:100%;
+}
+#detalles ul li{display:table-cell; text-align:center; padding-bottom:45px;}
+#detalles h2{font-weight:300; text-align:center; margin:0;}
+#detalles p{
+color:#999;	padding:0 30px 0 15px; font-size:16px;
+text-align:center; min-height:250px;
+}
+#detalles .imagen{
+height:140px; margin-bottom:50px;	
+}
+a.rojo{
+	background:#d67871;
+	text-align:center;
+	display:inline-block;
+	border-radius:5px;
+	height:40px; line-height:40px; padding:0 68px;
+	color:#fff;	
+}
+
+
+/*******+ IDEAS PARA BODAS ********/
+ #ideas{
+	padding-top:110px;
+	padding-bottom:60px;
+	
+}
+#ideas p{width:435px;}
+#ideas img{margin-top:-145px;}
+
+
+#ideas_bodas ul li img{
+	width:223px; 
+	float:left;	
+	margin:0 20px 20px 0;
+}
+#ideas_bodas ul{margin-bottom:20px;}
+#ideas_bodas ul li{border-bottom:#999999 1px solid; padding-right:55px; color:#c0bebc;}
+#ideas_bodas ul li:last-child{border-bottom:none;}
+
+/**********+ CORPORATIVO **************/
+.corporativo header{background:#0076a3;}
+.corporativo header ul li ul{background:#1e6d8f;}
+.corporativo header .menu .corp{background:#005387;}
+
+#servicios_corp h1{text-align:center;}
+#servicios_corp ul{
+font-size:0;
+	width:100%;	
+	text-align: center;
+	margin-bottom:60px;
+}
+#servicios_corp ul li{
+	display: inline-block;	
+	border:#f0f0f0 1px solid;
+	width: 32%;
+	margin-right: 2%;
+	text-align:left;
+}
+#servicios_corp ul li:nth-child(3n+3){margin-right:0;}
+#servicios_corp .imagen{
+	height:215px;	
+}
+#servicios_corp p{ padding:20px; color:#c0bebc; font-size:14px; line-height:24px;}
+h1.azul{color:#0076a3; font-size:25px;}
+
+.mitades{display:table; width:100%; margin-bottom:60px;}
+.mitades div{display:table-cell;}
+.mitades .imagen{
+	width:50%;
+	height:360px;
+	float:left;
+}
+.divazul{
+	color:#fff !important;
+	background:#005387;	
+}
+.divazul h1{color:#fff;}
+.mitades .texto{
+	float:left;
+	height:360px;
+	display:table-cell;
+	vertical-align:middle;
+	padding-left:50px;
+	width:50%;	
+	padding-top:40px;
+}
+.mitades .texto p{width:415px; font-size:18px;}
+
+
+.bordeGris{
+	border:#f0f0f0 1px solid; margin-bottom:30px;
+}
+.bordeGris p{
+	color:#999; font-size:16px; line-height:24px;	
+}
+.bordeGris .imagen{height:239px; width:415px;}
+.bordeGris h1{margin:60px 0 30px 40px;} .bordeGris .h12l{margin-top:30px;}
+.bordeGris p{margin-left:40px;}
+.bordeGris .left{margin-right:40px;}
+
+.corporativo footer{	background:#0076a3 url(../images/footer_2.png);}
+
+
+/********** CONTACTO *******/
+#citas{
+	background:#81cdd1;	
+	height:215px;
+	min-width:1000px;
+	padding:1%;
+}
+#citas div{
+	height:100%;
+	border:#fff 1px solid;
+	padding:0 1% 1% 1%;
+	text-align:center;
+	font-size:0;
+}
+#citas h1{text-align:center; color:#fff;}
+#citas input, #citas button{
+	background:none;
+	bordeR:none;
+	border-bottom:#e8e8e8 1px solid;
+	color:#fff;
+	height:40px; line-height:40px;	
+	font-family:'Quicksand';
+	font-size:16px;
+	width:24%;
+	margin-right:1%;
+	
+}
+#citas button{
+	border:#fff 1px solid;
+	display:inline-block;
+	height:60px; line-height:60px;
+}
+#citas input::-webkit-input-placeholder {color: #fff;}
+#citas input:-moz-placeholder { color: #fff;}
+#citas input:-ms-input-placeholder { color: #fff;}
+
+#infoContacto{
+	text-align:center;	
+	font-size:16px; line-height:24px;
+	padding:62px 0 55px;
+	font-weight:700;
+}
+#infoContacto p{
+	color:#999999;
+	margin-bottom:55px;
+}
+#infoContacto p strong{color:#db7a73;}
+#infoContacto p.datos{
+	line-height:55px;
+	color:#333333;
+}
+
+#infoGeneral{
+	background:#e5dddb;
+	padding:70px 0;	
+	border-top:#cccccc 1px solid;
+}
+#infoGeneral .contenedor{width:758px; padding-left:32px;}
+#infoGeneral h1{text-align:center;}
+#infoGeneral label{
+	color:#666666;
+	font-weight:700;
+	margin:0 32px 10px  0;
+	width:210px;
+	float:left;	
+	display:inline-block;
+	text-transform:uppercase;
+}
+#infoGeneral input, #infoGeneral select{
+	width:210px;
+	float:left;	
+	display:inline-block;
+	font-family:'Quicksand';
+	border:#cccccc 1px solid;
+	height:40px; line-height:40px;
+	margin:0 32px 40px 0;
+	padding:0 5px;
+}
+#infoGeneral button{
+	background:#d67871;
+	text-align:center;
+	display:inline-block;
+	height:40px; line-height:40px; padding:0;
+	color:#fff;	
+	width:210px;
+	border:none;
+	font-family:'Quicksand';
+	font-weight:700;
+	text-transform:uppercase;
+}
