@@ -14,6 +14,7 @@
     <body>
         <?php
         include('includes/header.php');
+        //incluimos todos los archivos que contienen las funciones
         include('includes/presentacion.php');
         include('includes/cuenta_con.php');
         include('includes/sobre.php');
@@ -42,7 +43,10 @@
                 <div class="tabber-tab" id="tab-1-1">
                     <ul class="jardinItem" style="position:static;">
                         <li class="jardinDetalle clearfix">
-                        <?php presentacion($host, $user, $pass, $db, $cambio) ?>
+                        <?php 
+                        //mandamos llamar a la funcion presentar para que cree el html de esa seccion
+                        //con los datos de la base para el id lugar a 1 el cual lo indica la variable cambio
+                        presentacion($host, $user, $pass, $db, $cambio) ?>
                             <div class="jardin_galeria">
                                 <a class="fancybox" rel="group" href="images/banner_realdelbosque.png"><img src="images/galeria1.jpg" alt="" /></a>
                                 <a class="fancybox" rel="group" href="images/banner_realdelbosque.png"><img src="images/galeria2.jpg" alt="" /></a>
@@ -63,19 +67,25 @@
                             <section id="cuentaCon">
                                 <div class="iconos"><img src="images/icono_novios.png" /> <img src="images/icono_coctel.png" /> <img src="images/icono_cama.png" /> <img src="images/icono_golf.png" /></div>
                                 <h3>ESTE LUGAR CUENTA CON</h3>
-                                <?php cuentaCon($host, $user, $pass, $db, $cambio) ?>
+                                <?php 
+                                //funcion que crea el html de cuenta con
+                                cuentaCon($host, $user, $pass, $db, $cambio) ?>
                             </section>
 
                             <section id="about">
                                 <div class="contenedor">
-                                    <?php sobre($host, $user, $pass, $db, $cambio) ?>
+                                    <?php 
+                                    //funcion que crea el html de sobre
+                                    sobre($host, $user, $pass, $db, $cambio) ?>
                                 </div>
                             </section>
                             <div class="pushAbout"></div>
 
                             <section id="ubicacion" class="contenedor">
                                 <h1>UBICACIÓN</h1>
-                                <?php ubicacion($host, $user, $pass, $db, $cambio) ?>
+                                <?php 
+                                //funcion que crea el html de la ubicacion
+                                ubicacion($host, $user, $pass, $db, $cambio) ?>
                             </section>
                             <section id="contacto">
                                 <div class="contenedor">
@@ -104,7 +114,10 @@
                 <div class="tabber-tab" id="tab-1-2">
                     <ul class="jardinItem" style="position:static;">
                         <li class="jardinDetalle clearfix">
-                        <?php $cambio = 2; 
+                        <?php 
+                        //Modificamos el id lugar para que nos muestre el segundo lugar
+                        //id lugar ahora vale dos
+                        $cambio = 2; 
                         presentacion($host, $user, $pass, $db, $cambio) ?>
                             <div class="jardin_galeria">
                                 <a class="fancybox" rel="group" href="images/banner_realdelbosque.png"><img src="images/galeria1.jpg" alt="" /></a>
@@ -127,19 +140,25 @@
                             <section id="cuentaCon">
                                 <div class="iconos"><img src="images/icono_novios.png" /> <img src="images/icono_coctel.png" /> <img src="images/icono_cama.png" /> <img src="images/icono_golf.png" /></div>
                                 <h3>ESTE LUGAR CUENTA CON</h3>
-                                <?php cuentaCon($host, $user, $pass, $db, $cambio) ?>
+                                <?php 
+                                //html de cuenta con, con id=2
+                                cuentaCon($host, $user, $pass, $db, $cambio) ?>
                             </section>
 
                             <section id="about">
                                 <div class="contenedor">
-                                    <?php sobre($host, $user, $pass, $db, $cambio) ?>
+                                    <?php
+                                    //html de sobre con id =2
+                                    sobre($host, $user, $pass, $db, $cambio) ?>
                                 </div>
                             </section>
                             <div class="pushAbout"></div>
 
                             <section id="ubicacion" class="contenedor">
                                 <h1>UBICACIÓN</h1>
-                                <?php ubicacion($host, $user, $pass, $db, $cambio) ?>
+                                <?php 
+                                //html de ubicacion con id=2
+                                ubicacion($host, $user, $pass, $db, $cambio) ?>
                             </section>
                             <section id="contacto">
                                 <div class="contenedor">
@@ -168,7 +187,9 @@
                 <div class="tabber-tab" id="tab-1-3">
                     <ul class="jardinItem" style="position:static;">
                         <li class="jardinDetalle clearfix">
-                        <?php $cambio = 3;
+                        <?php 
+                        //obtenemos el lugar 3 con la variable cambio = 3
+                        $cambio = 3;
                         presentacion($host, $user, $pass, $db, $cambio) ?>
                             <div class="jardin_galeria">
                                 <a class="fancybox" rel="group" href="images/banner_realdelbosque.png"><img src="images/galeria1.jpg" alt="" /></a>
@@ -191,19 +212,25 @@
                             <section id="cuentaCon">
                                 <div class="iconos"><img src="images/icono_novios.png" /> <img src="images/icono_coctel.png" /> <img src="images/icono_cama.png" /> <img src="images/icono_golf.png" /></div>
                                 <h3>ESTE LUGAR CUENTA CON</h3>
-                                <?php cuentaCon($host, $user, $pass, $db, $cambio) ?>
+                                <?php 
+                                //html de cuenta con, con id = 3
+                                cuentaCon($host, $user, $pass, $db, $cambio) ?>
                             </section>
 
                             <section id="about">
                                 <div class="contenedor">
-                                    <?php sobre($host, $user, $pass, $db, $cambio) ?>
+                                    <?php 
+                                    //html de sobre con id = 3
+                                    sobre($host, $user, $pass, $db, $cambio) ?>
                                 </div>
                             </section>
                             <div class="pushAbout"></div>
 
                             <section id="ubicacion" class="contenedor">
                                 <h1>UBICACIÓN</h1>
-                                <?php ubicacion($host, $user, $pass, $db, $cambio) ?>
+                                <?php 
+                                //html de ubicacion con id = 3
+                                ubicacion($host, $user, $pass, $db, $cambio) ?>
                             </section>
                             <section id="contacto">
                                 <div class="contenedor">

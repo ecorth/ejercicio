@@ -33,7 +33,10 @@
             <div class="contenedor">
                 <div class="tabber-tab" id="tab-1-1">
                     <ul class="jardinItem">
-                        <?php $cambio = 1;
+                        <?php 
+                        //llamamos a la funcion conectar e indicamos que cambio
+                        //es igual a 1 para que obtenga el tipo con id 1
+                        $cambio = 1;
                         conectar($host, $user, $pass, $db, $cambio);
                         ?>
                         
@@ -41,14 +44,18 @@
                 </div>
                 <div class="tabber-tab" id="tab-1-2">
                     <ul class="jardinItem">
-                        <?php $cambio=2; 
+                        <?php 
+                        //En este apartado obtendremos los datos con id tipo = 2
+                        $cambio=2; 
                         conectar($host, $user, $pass, $db, $cambio)
                         ?>
                     </ul>
                 </div>
                 <div class="tabber-tab" id="tab-1-3">
                     <ul class="jardinItem">
-                        <?php $cambio=3; 
+                        <?php 
+                        //En este apartado obtendremos los datos con id tipo = 3
+                        $cambio=3; 
                         conectar($host, $user, $pass, $db, $cambio)
                         ?>
                     </ul>

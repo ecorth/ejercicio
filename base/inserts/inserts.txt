@@ -136,3 +136,11 @@ UPDATE `lacuisine`.`lugares` SET `cap_max`='200' WHERE `id`='1' and`ciudad_id`='
 UPDATE `lacuisine`.`lugares` SET `cap_max`='130' WHERE `id`='2' and`ciudad_id`='2' and`contacto_id`='2';
 UPDATE `lacuisine`.`lugares` SET `cap_max`='120' WHERE `id`='3' and`ciudad_id`='3' and`contacto_id`='3';
 UPDATE `lacuisine`.`lugares` SET `cap_max`='100' WHERE `id`='4' and`ciudad_id`='4' and`contacto_id`='4';
+
+#lugar url
+
+UPDATE `lacuisine`.`lugares` SET `url`='jardin_detalle.php' WHERE `id`='1' and`ciudad_id`='1' and`contacto_id`='1';
+UPDATE `lacuisine`.`lugares` SET `url`='jardin_detalle.php' WHERE `id`='2' and`ciudad_id`='2' and`contacto_id`='2';
+UPDATE `lacuisine`.`lugares` SET `url`='jardin_detalle.php' WHERE `id`='3' and`ciudad_id`='3' and`contacto_id`='3';
+UPDATE `lacuisine`.`lugares` SET `url`='jardin_detalle.php' WHERE `id`='4' and`ciudad_id`='4' and`contacto_id`='4';
+
